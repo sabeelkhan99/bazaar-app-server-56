@@ -8,7 +8,7 @@ const app = express();
 
 // Middlewares
 app.use(cors({
-    origin: ['http://localhost:5173'],
+    origin: ['https://loquacious-sopapillas-4fb988.netlify.app'],
     methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE'],
     credentials: true
 }))

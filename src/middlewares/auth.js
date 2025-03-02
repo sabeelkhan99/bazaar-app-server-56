@@ -4,7 +4,7 @@ import UserRepo from '../repositories/UserRepo.js';
 import Product from '../models/Product.js';
 
 // TODO: Move Environment variable file
-const JWT_SECRET = "DB9CF3C97C4B598E711";
+const JWT_SECRET = process.env.JWT_SECRET || "DB9CF3C97C4B598E711";
 
 export const isLoggedIn = (req, res, next) => {
     const token = req.headers?.authorization.replace('Bearer ', '');
